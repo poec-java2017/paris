@@ -34,7 +34,6 @@ header {
 }
 header#info {
     background: #000;
-    font-family: ;
 }
 @media only screen and (max-width:720px) {
     header#info { display:none; }
