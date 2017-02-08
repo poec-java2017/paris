@@ -136,11 +136,12 @@
                                     <a href="#close" title="Close" class="close">X</a>
                                 </div>
 
-                                <div class="modalContent">
+                                <form role="form" class="modalContent" action="account.html">
+
                                     <div class="modalContentRadio">
-                                        <span><input type="radio" value="visa">Visa<img class="modal-img" src="./static/image/visa.png" alt="visa" /></span>
-                                        <span><input type="radio" value="master">Mastercard<img class="modal-img" src="./static/image/master.png" alt="mastercard" /></span>
-                                        <span><input type="radio" value="cb">Carte Bleue<img class="modal-img" src="./static/image/cb.png" alt="carte bleue" /></span>
+                                        <span><input name="carte" required type="radio" value="visa">Visa<img class="modal-img" src="./static/image/visa.png" alt="visa" /></span>
+                                        <span><input name="carte" required type="radio" value="master">Mastercard<img class="modal-img" src="./static/image/master.png" alt="mastercard" /></span>
+                                        <span><input name="carte" required type="radio" value="cb">Carte Bleue<img class="modal-img" src="./static/image/cb.png" alt="carte bleue" /></span>
                                     </div>
 
                                     <div class="modalContentInput">
@@ -163,18 +164,18 @@
                                         <div class="row bank">
                                             <span>Montant</span>
                                             <input type="number" step="0.01"  name="fname" required size="8px">
-                                            <span>
                                         </div>
 
                                     </div>
-                                </div>
+                                    <div class="modalFooter">
+                                        <a href="#cancel" title="Cancel" class="cancel">Annuler</a>
+                                        <input class="ok" type="submit" name="valider">
+                                        <!--<a href="#ok" title="Ok" class="ok">Valider</a>-->
+                                        <p>Mention d'alerte quelconque</p>
+                                        <div class="clear"></div>
+                                    </div>
+                                </form>
 
-                                <div class="modalFooter">
-                                    <a href="#cancel" title="Cancel" class="cancel">Annuler</a>
-                                    <a href="#ok" title="Ok" class="ok">Valider</a>
-                                    <p>Mention d'alerte quelconque</p>
-                                    <div class="clear"></div>
-                                </div>
                             </div>
                         </div>
                     </div>

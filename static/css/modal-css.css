@@ -86,15 +86,6 @@ STYLE DU MODAL
     flex:0 150px;
 }
 
-.modalHeader{
-    /*display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 2px groove #efefef;*/
-
-}
-
 .modal-img{
     max-width:25px;
     max-height: 25px;
@@ -106,6 +97,13 @@ STYLE DU MODAL
         width: 450px;
     }
 
+}
+
+.modalFooter input[type=submit]{
+    border:none;
+    height:25px;
+    padding:auto;
+    font-size: 100%;
 }
 
 /**********************************/
