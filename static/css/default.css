@@ -412,6 +412,7 @@ h1, h2 {
     border-image: linear-gradient(to right, #555, #FFF) 20 stretch;
     color:#555;
     font-style:italic;
+    width:100%;
 }
 h2 a.material-icons {
     align-self:center;

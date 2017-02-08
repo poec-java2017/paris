@@ -16,17 +16,18 @@ h2{
     margin-right: auto;
     width: 984px;*/
     flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 #leftBox {
-    width: 450px;
+    width: calc(50% - 30px);
     float: left;
     margin-right: 20px;
     padding-bottom: 8px;
 }
 
 #rightBox {
-    width: 450px;
+    width: calc(50% - 30px);
     float: left;
 }
 .registerBoxes {
@@ -134,4 +135,18 @@ input[type="checkbox"], input[type="radio"] {
     clear: both;
     padding: 0 30px 10px 0;
     overflow: hidden;
+}
+
+@media only screen and (max-width:960px) {
+    #leftBox, #rightBox{
+        width: calc(100% - 20px);
+        float: inherit;
+        align-self: center;
+        margin-left: 5%;
+    }
+
+    .wrapper, #content{
+        display: flex;
+        justify-content: center;
+    }
 }
