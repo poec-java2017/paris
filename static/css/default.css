@@ -153,6 +153,25 @@ header#global .container #top-links li:nth-child(8):before {
 /****************************
 * Credentials
 ****************************/
+header#global .container #avatarBox{
+    align-items: center;
+}
+header#global .container #avatarBox > a {
+    color:#900;
+    font-size:4em;
+}
+header#global .container #avatarBox > div {
+    text-align: right;
+}
+header#global .container #avatarBox > div a:first-child{
+    color: #666;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+header#global .container #avatarBox > div a:last-child{
+    color: #555;
+}
+
 header#global .container #log-me-in {
     display:none;
 }
@@ -204,7 +223,12 @@ header#global .container #credentials #register a {
     color:#99000F;
 }
 
+
+
 @media only screen and (max-width:720px) {
+    header#global .container #avatarBox {
+        display: none;
+    }
     header#global .container #log-me-in {
         color:#900;
         display:flex;
