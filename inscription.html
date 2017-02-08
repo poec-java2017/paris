@@ -73,7 +73,7 @@
         <div class="wrapper row">
 
 
-            <form id="registrationForm" action="/registrer" method="post" novalidate="novalidate">
+            <form id="registrationForm" action="index.html" method="get" name ="registrationForm">
 
                 <div id="leftBox" class="registerBoxes ">
 
@@ -86,14 +86,14 @@
                         <label for="Name">Nom*</label>
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner votre nom" id="Name" maxlength="100"
-                               name="Name" value="" type="text">
+                               name="Name" value="" type="text" required>
                     </div>
 
                     <div class="form-item">
                         <label for="Surname">Prénom*</label>
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner votre prénom" id="Surname" maxlength="100"
-                               name="Surname" value="" type="text">
+                               name="Surname" value="" type="text" required>
                     </div>
 
 
@@ -275,7 +275,7 @@
                         <label for="RoadName">Nom de rue</label>
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner le nom de votre rue" id="RoadName" maxlength="100"
-                               name="RoadName" value="" type="text">
+                               name="RoadName" value="" type="text" required>
                     </div>
 
                     <div class="form-item">
@@ -283,20 +283,20 @@
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner le nom de votre ville" id="CityName"
                                maxlength="100"
-                               name="CityName" value="" type="text">
+                               name="CityName" value="" type="text" required>
                     </div>
 
                     <div class="form-item">
                         <label for="PostCode">Code postal</label>
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner votre code postal" id="PostCode" maxlength="100"
-                               name="PostCode" value="" type="text">
+                               name="PostCode" value="" type="text" required>
                     </div>
 
 
-                    <div class="form-item birthPlace">
+                    <div class="form-item">
                         <label for="Country"> Pays de naissance*: </label>
-                        <select id="Country" name="Country" class="short">
+                        <select id="Country" name="Country" class="short" required>
                             <option value="AF">Afghanistan</option>
                             <option value="ZA">Afrique Du Sud</option>
                             <option value="AL">Albanie</option>
@@ -545,7 +545,7 @@
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner votre numéro de téléphone" id="PhoneNumber"
                                maxlength="20"
-                               name="PhoneNumber" value="" type="tel">
+                               name="PhoneNumber" value="" type="tel" required>
                     </div>
                 </div>
 
@@ -559,7 +559,7 @@
                             <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                    data-val-required="Veuillez renseigner votre adresse e-mail" id="Email"
                                    maxlength="100"
-                                   name="Email" value="" type="text">
+                                   name="Email" value="" type="text" required>
                         </div>
 
                         <div class="form-item">
@@ -567,7 +567,7 @@
                             <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                    data-val-required="Veuillez renseigner votre mot de passe" id="Password"
                                    maxlength="100"
-                                   name="password" type="password" value="" required>
+                                   name="Password" type="password" value="" required>
                         </div>
 
                         <div class="form-item">
@@ -575,7 +575,7 @@
                             <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                    data-val-required="Veuillez confirmer votre mot de passe" id="PasswordConfirm"
                                    maxlength="100"
-                                   name="password" type="password" value="" required>
+                                   name="PasswordConfirm" type="password" value="" required>
                         </div>
 
                     </div>
@@ -594,12 +594,12 @@
                             <div class="tc-validation">
                                 <input title="" class="checkbox " data-val="true"
                                        data-val-mandatory="Veuillez confirmer avoir lu et accepté le règlement"
-                                       data-val-required="The Je certifie avoir plus de 18 ans. J'ai lu et j'accepte les <a href=&quot;javascript:OuvrePopupRules(%urlcg%)&quot; &quot;>Conditions Générales</a>
-et la <a href=&quot;javascript:OuvrePopupRules(%urlrv%)&quot; &quot;>Charte sur le Respect de la Vie Privée</a> field is required."
+                                       data-val-required="The Je certifie avoir plus de 18 ans. J'ai lu et j'accepte les
+                                       <a href=&quot;javascript:OuvrePopupRules(%urlcg%)&quot; &quot;>Conditions Générales</a>
+                                       et la <a href=&quot;javascript:OuvrePopupRules(%urlrv%)&quot; &quot;>Charte sur
+                                       le Respect de la Vie Privée</a> field is required."
                                        id="Conditions" name="Conditions" value="true" type="checkbox"><input
-                                    name="Conditions"
-                                    value="false"
-                                    type="hidden">
+                                    name="Conditions" value="false" type="hidden" required>
                                 <p>Je certifie avoir plus de 18 ans. J'ai lu et j'accepte les <a target="_blanc"
                                                                                                  href="/content/tandc">Conditions
                                     Générales</a>
@@ -673,6 +673,6 @@ et la <a href=&quot;javascript:OuvrePopupRules(%urlrv%)&quot; &quot;>Charte sur 
 <!-- Javascript libraries -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="static/js/init.js" type="text/javascript"></script>
+<script src="static/js/validationForm.js" type="text/javascript"></script>
 </body>
 </html>
