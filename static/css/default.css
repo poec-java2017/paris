@@ -548,14 +548,15 @@ footer .legal {
 .row.table:nth-child(n+3) {
     border-top:solid 1px #999;
 }
-.row.table:last-child {
-    border-bottom:solid 1px #333;
-    border-radius:0 0 5px 5px;
-}
 .row.table.header,
 .row.table.sum {
     background:#DDD;
     font-weight:bold;
+}
+.row.table:last-child,
+.row.table.sum {
+    border-bottom:solid 1px #333;
+    border-radius:0 0 5px 5px;
 }
 .row.table > div {
     border-right:solid 1px #999;
@@ -696,4 +697,16 @@ input[id^=toggle-] + label.tab {
 .table .operation-output {
     flex:0 1 100px;
     justify-content:flex-end;
+}
+
+.row.account-operations {
+    margin:10px 20%;
+}
+.row.account-operations a {
+    border:none;
+    border-radius:3px;
+    background:#2AB27B;
+    color:#FFF;
+    font-weight:bold;
+    padding:5px;
 }
