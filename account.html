@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Betclic</title>
     <link href="static/css/default.css" rel="stylesheet" />
+    <link href="static/css/modal-css.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
@@ -122,8 +123,59 @@
                         </div>
 
                         <div class="row account-operations">
-                            <a href="#" id="operation-input">Ajouter des crédits</a>
+                            <a href="#modal-operation-input" id="operation-input">Ajouter des crédits</a>
                             <a href="#" id="operation-output">Retirer des crédits</a>
+                        </div>
+
+                        <div id="modal-operation-input" class="modalWindow">
+                            <div>
+
+                                <div class="modalHeader">
+                                    <img src="./static/image/betclic-logo.png" alt="Betclic" />
+                                    <h2>Approvisionner mon compte.</h2>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                </div>
+
+                                <div class="modalContent">
+                                    <div class="modalContentRadio">
+                                        <span><input type="radio" value="visa">Visa<img class="modal-img" src="./static/image/visa.png" alt="visa" /></span>
+                                        <span><input type="radio" value="master">Mastercard<img class="modal-img" src="./static/image/master.png" alt="mastercard" /></span>
+                                        <span><input type="radio" value="cb">Carte Bleue<img class="modal-img" src="./static/image/cb.png" alt="carte bleue" /></span>
+                                    </div>
+
+                                    <div class="modalContentInput">
+                                        <div class="row bank">
+                                            <span>Titulaire de la carte</span>
+                                            <input type="text" name="fname" required size="30px">
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Numéro carte bleue</span>
+                                            <input type="text" name="fname" required>
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Cryptogramme</span>
+                                            <input type="text" name="fname" required size="5px" >
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Date d'expiration</span>
+                                            <input type="text" name="fname" required size="8px" placeholder="MM/AAAA">
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Montant</span>
+                                            <input type="text" name="fname" required size="8px">
+                                            <span>€</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="modalFooter">
+                                    <a href="#cancel" title="Cancel" class="cancel">Annuler</a>
+                                    <a href="#ok" title="Ok" class="ok">Valider</a>
+                                    <p>Mention d'alerte quelconque</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="account-settings" class="col tab">
