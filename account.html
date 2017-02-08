@@ -240,18 +240,18 @@
                             <label for="toggle-account-infos">+</label>
                             <form id="account-form" class="col">
                                 Date de naissance
-                                <input type="date" id="birthdate" name="birthdate" value="2017-02-16" />
+                                <input type="date" id="birthdate" name="birthdate" value="2017-02-16" disabled />
                                 Adresse
-                                <input type="text" id="address" name="address" value="15, allée Robert Lemasson" />
+                                <input type="text" id="address" name="address" value="15, allée Robert Lemasson" required />
                                 Complément d'adresse
                                 <input type="text" id="address-cpl" name="address-cpl" />
                                 Code postal
-                                <input type="text" id="postcode" name="postcode" pattern="[0-9]{5}" value="76320" />
+                                <input type="text" id="postcode" name="postcode" pattern="[0-9]{5}" value="76320" required />
                                 Ville
-                                <input type="text" id="city" name="city" value="Bois-Guillaume" />
+                                <input type="text" id="city" name="city" value="Bois-Guillaume" required />
                                 Pays
                                 <div class="row">
-                                    <input type="text" id="country" name="country" value="France" />
+                                    <input type="text" id="country" name="country" value="France" required />
                                     <input type="submit" value="Sauvegarder" />
                                 </div>
                             </form>
@@ -262,12 +262,12 @@
                             <label for="toggle-account-password">+</label>
                             <form id="password-form" class="col">
                                 Mot de passe actuel
-                                <input type="password" id="apppassword" name="apppassword" />
+                                <input type="password" id="apppassword" name="apppassword" required />
                                 Nouveau mot de passe
-                                <input type="password" id="apppassword" name="apppassword" />
+                                <input type="password" id="appnpassword" name="appnpassword" required />
                                 Nouveau mot de passe
                                 <div class="row">
-                                    <input type="password" id="apppassword" name="apppassword" />
+                                    <input type="password" id="apprnpassword" name="apprnpassword" required />
                                     <input type="submit" value="Sauvegarder" />
                                 </div>
                             </form>
