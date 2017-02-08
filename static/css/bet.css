@@ -79,13 +79,13 @@
 .betModalContainer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
 }
 
 .betModalLeft, .betModalRight {
     width: calc(50% - 5px);
     min-height: 80px;
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 .betModalBet{
@@ -128,4 +128,21 @@
     display: flex;
     justify-content: space-between;
     padding-right: 12px;
+}
+
+@media screen and (max-width: 500px){
+    .betModalContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modalWindow > div {
+        width: 100%;
+    }
+
+    .betModalLeft, .betModalRight {
+        width: calc(100% - 10px);
+        margin-right: 5px;
+        margin-left: 5px;
+    }
 }
