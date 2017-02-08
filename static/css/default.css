@@ -639,14 +639,13 @@ input[id^=toggle-] + label.tab {
     font-style:normal;
     justify-content:space-between;
 }
-.hidden-form label,
-.hidden-form h2 a {
+.hidden-form label {
     align-self:center;
     border:solid 1px #999;
     border-radius:3px;
     color:#AAA;
     font-weight:bold;
-    height:100%;
+    height:auto;
     padding:2px 5px;
 }
 
