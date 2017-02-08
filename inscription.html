@@ -76,18 +76,18 @@
                 <div class="registerBoxes">
                     <p class="registrationBigTitle">
                         <b>Vos informations personnelles</b>
-                        <span class="registrationSmallTitle">(*Champs obligatoires)</span>
+                        <!--span class="registrationSmallTitle">(*Champs obligatoires)</span-->
                     </p>
 
                     <div class="form-item">
-                        <label for="Name">Nom*</label>
+                        <label for="Name">Nom</label>
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner votre nom" id="Name" maxlength="100"
                                name="Name" value="" type="text" required>
                     </div>
 
                     <div class="form-item">
-                        <label for="Surname">Prénom*</label>
+                        <label for="Surname">Prénom</label>
                         <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                data-val-required="Veuillez renseigner votre prénom" id="Surname" maxlength="100"
                                name="Surname" value="" type="text" required>
@@ -98,7 +98,8 @@
                         <label for="CustBirthDate">Date de naissance</label>
                         <select class="day" data-val="true"
                                 data-val-required="Veuillez renseigner votre jour de naissance"
-                                id="CustBirthDate_Day" name="CustBirthDate.Day" onchange="ValideDateOfBirth()">
+                                id="CustBirthDate_Day" name="CustBirthDate.Day" onchange="ValideDateOfBirth()"
+                                name = "CustBirthDate_Day">
                             <option selected="selected" value="">Jour</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
@@ -134,7 +135,8 @@
                         </select>
                         <select class="month" data-val="true"
                                 data-val-required="Veuillez renseigner votre mois de naissance"
-                                id="CustBirthDate_Month" name="CustBirthDate.Month" onchange="ValideDateOfBirth()">
+                                id="CustBirthDate_Month" name="CustBirthDate.Month" onchange="ValideDateOfBirth()"
+                                name ="CustBirthDate_Month">
                             <option selected="selected" value="">Mois</option>
                             <option value="01">Janvier</option>
                             <option value="02">Février</option>
@@ -151,7 +153,8 @@
                         </select>
                         <select class="year" data-val="true"
                                 data-val-required="Veuillez renseigner votre année de naissance"
-                                id="CustBirthDate_Year" name="CustBirthDate.Year" onchange="ValideDateOfBirth()">
+                                id="CustBirthDate_Year" name="CustBirthDate.Year" onchange="ValideDateOfBirth()"
+                                name ="CustBirthDate_Year">
                             <option selected="selected" value="">Année</option>
                             <option value="1999">1999</option>
                             <option value="1998">1998</option>
@@ -292,7 +295,7 @@
 
 
                     <div class="form-item">
-                        <label for="Country"> Pays de naissance*: </label>
+                        <label for="Country"> Pays*: </label>
                         <select id="Country" name="Country" class="short" required>
                             <option value="AF">Afghanistan</option>
                             <option value="ZA">Afrique Du Sud</option>
@@ -550,7 +553,7 @@
                         <p class="registrationBigTitle"><b>Vos informations de connexion</b></p>
 
                         <div class="form-item">
-                            <label for="Email">Adresse e-mail*</label>
+                            <label for="Email">Adresse e-mail</label>
                             <input title="" autocomplete="off" class="textinput  input-validation-error" data-val="true"
                                    data-val-required="Veuillez renseigner votre adresse e-mail" id="Email"
                                    maxlength="100"
