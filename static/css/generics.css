@@ -18,6 +18,9 @@ body {
     flex-direction:row;
     justify-content:space-between;
 }
+.row.wrap {
+    flex-wrap:wrap;
+}
 .col {
     display:flex;
     flex-direction:column;

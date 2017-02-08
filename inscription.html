@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Betclic</title>
+    <link href="static/css/generics.css" rel="stylesheet"/>
     <link href="static/css/default.css" rel="stylesheet"/>
     <link href="static/css/inscription.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -68,15 +69,11 @@
     </ul>
 </div>
 <main id="content">
-    <div class="container" style="flex-wrap:wrap;">
-        <h2>Inscription</h2>
-        <div class="wrapper row">
-
-
-            <form id="registrationForm" action="index.html" method="get" name ="registrationForm">
-
-                <div id="leftBox" class="registerBoxes ">
-
+    <div class="container">
+        <section>
+            <h1>Inscription</h1>
+            <form id="register" name="register" action="index.html" method="get" class="row wrap">
+                <div class="registerBoxes">
                     <p class="registrationBigTitle">
                         <b>Vos informations personnelles</b>
                         <span class="registrationSmallTitle">(*Champs obligatoires)</span>
@@ -548,9 +545,7 @@
                                name="PhoneNumber" value="" type="tel" required>
                     </div>
                 </div>
-
-
-                <div id="rightBox">
+                <div class="col">
                     <div class="registerBoxes">
                         <p class="registrationBigTitle"><b>Vos informations de connexion</b></p>
 
@@ -577,21 +572,15 @@
                                    maxlength="100"
                                    name="PasswordConfirm" type="password" value="" required>
                         </div>
-
                     </div>
-
                     <div class="registerBoxes">
-                        <p class="registrationBigTitle"><b>Validation de vos informations</b></p>
+                        <h3 class="registrationBigTitle">Validation de vos informations</h3>
 
                         <div id="addInfos">
-                            <p>
-                                <img id="plus"
-                                     src="https://betclick.hs.llnwd.net/e1/page/c3/newSkinning/logos/frfr/18plus_whitebg.png"
-                                     alt="">
-                            </p>
-
+                            <img id="plus" src="https://betclick.hs.llnwd.net/e1/page/c3/newSkinning/logos/frfr/18plus_whitebg.png" alt="">
 
                             <div class="tc-validation">
+
                                 <input title="" class="checkbox " data-val="true"
                                        data-val-mandatory="Veuillez confirmer avoir lu et accepté le règlement"
                                        data-val-required="The Je certifie avoir plus de 18 ans. J'ai lu et j'accepte les
@@ -600,16 +589,12 @@
                                        le Respect de la Vie Privée</a> field is required."
                                        id="Conditions" name="Conditions" value="true" type="checkbox"><input
                                     name="Conditions" value="false" type="hidden" required>
-                                <p>Je certifie avoir plus de 18 ans. J'ai lu et j'accepte les <a target="_blanc"
-                                                                                                 href="/content/tandc">Conditions
-                                    Générales</a>
-                                    et la <a target="_blanc" href="/content/privacypolicy">Charte sur le Respect de la
-                                        Vie
-                                        Privée</a> *</p>
-                                <span class="field-validation-valid" data-valmsg-for="Conditions"
-                                      data-valmsg-replace="true"></span>
+                                <p>
+                                    Je certifie avoir plus de 18 ans. J'ai lu et j'accepte les <a target="_blanc" href="/content/tandc">Conditions Générales</a>
+                                    et la <a target="_blanc" href="/content/privacypolicy">Charte sur le Respect de la Vie Privée</a> *.
+                                </p>
+                                <span class="field-validation-valid" data-valmsg-for="Conditions" data-valmsg-replace="true"></span>
                             </div>
-
 
                             <div class="centered-button-wrapper create-account">
                                 <div class="submitButton progress-button">
@@ -622,15 +607,10 @@
 
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
-
             </form>
-
-        </div>
+        </section>
     </div>
 </main>
 <footer>

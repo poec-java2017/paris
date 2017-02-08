@@ -1,16 +1,29 @@
 /*************/
 /*INSCRIPTION*/
 /*************/
-
-h2{
-    text-align: center;
+#register {
+    align-items:flex-start;
 }
-
-#RegisterForm {
-    position: relative;
+.registerBoxes {
+    background: #f5f5f5;
+    border:1px solid #a2a1a1;
+    border-radius: 4px;
+    display:flex;
+    flex-direction:column;
+    flex:1 auto;
+    height:auto;
+    margin-bottom: 15px;
+    padding: 0 0 0 5px;
+}
+.registerBoxes + div.col {
+    flex:1 auto;
+    margin-left:20px;
+    min-width:50%;
+    width:50%;
 }
 
 .wrapper {
+    display:none;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -29,15 +42,6 @@ h2{
 #rightBox {
     width: calc(50% - 30px);
     float: left;
-}
-.registerBoxes {
-    padding: 0 0 0 5px;
-    background: #f5f5f5;
-    border: 1px solid #a2a1a1;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    margin-bottom: 15px;
 }
 
 .registerBoxes .registrationBigTitle {
@@ -138,15 +142,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 @media only screen and (max-width:960px) {
-    #leftBox, #rightBox{
-        width: calc(100% - 20px);
-        float: inherit;
-        align-self: center;
-        margin-left: 5%;
-    }
-
-    .wrapper, #content{
-        display: flex;
-        justify-content: center;
+    .registerBoxes + div.col {
+        margin-left:0;
     }
 }
