@@ -62,8 +62,8 @@ INSERT INTO `paris`.`user` (`id`, `lastname`, `firstname`, `email`, `password`, 
 	('3', 'Dufois', 'Axelle', 'axel58@gmail.com', 'azerty', '1991-06-08', '2'),
 	('4', 'Paletant', 'Jean-Michel', 'jenmich@mail.lol', 'azerty', '1969-06-06', '4');
 
-/*----------------------opration_type----------------------------*/
-INSERT INTO `paris`.`opration_type` (`id`, `name`) VALUES 
+/*----------------------operation_type----------------------------*/
+INSERT INTO `paris`.`operation_type` (`id`, `name`) VALUES 
 	('1', 'Débit Compte'),
 	('2', 'Crédit Compte'),
 	('3', 'Miser'),
