@@ -172,13 +172,16 @@ header#global .container #credentials {
 .global-input input,
 .global-input button,
 #credentials input {
+    background:none;
     border:none;
     font-size:0.9em;
     outline:none;
 }
 header#global .container #credentials .global-input a {
+    align-self:center;
     color:#666;
     font-style:italic;
+    white-space:nowrap;
 }
 header#global .container #credentials input[type=submit] {
     background:#333;
