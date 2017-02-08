@@ -11,6 +11,16 @@ $(function() {
  * Modal pari
  */
 // Fonction de calcul automatique du gain potentiel
+function betChange(){
+    var quotation = Number($('.betModalQuotation > span:last-child').text().replace(',', '.'));
+
+    var bet = Number($('#betInput').val());
+
+    var sum = (quotation * bet).toFixed(2);
+
+    $('.betModalSum').text(sum + ' €');
+}
+
 
 $('.betButton').click(function(){
     // Intitulé du match
@@ -24,11 +34,9 @@ $('.betButton').click(function(){
     // Choix du pari
     var betOn = $(this).attr('data-bet');
     $('.betModalBetOn > span:last-child').text(betOn);
+
+    betChange();
 })
 
-$('#betInput').change(function(){
-    var quotation = $('.betModalQuotation > span:last-child').text() * 1;
-    var bet = $('#betInput').val();
-    var sum = Number(quotation) * Number(bet);
-    $('.betModalSum').text(sum);
-})
+$('#betInput').change(betChange);
+$('#betInput').keyup(betChange);
