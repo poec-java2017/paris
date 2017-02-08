@@ -120,15 +120,73 @@
 
                         <div class="row account-operations">
                             <a href="#modal-operation-input" id="operation-input">Ajouter des crédits</a>
-                            <a href="#" id="operation-output">Retirer des crédits</a>
+                            <a href="#modal-operation-output" id="operation-output">Retirer des crédits</a>
                         </div>
 
+                        <!--------------------------------------------------------------------------->
+                        <!------------------------------MODAL 1-------------------------------------->
+                        <!--------------------------------------------------------------------------->
                         <div id="modal-operation-input" class="modalWindow">
                             <div>
 
                                 <div class="modalHeader">
                                     <img src="./static/image/betclic-logo.png" alt="Betclic" />
                                     <h2>Approvisionner mon compte.</h2>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                </div>
+
+                                <form role="form" class="modalContent" action="account.html">
+
+                                    <div class="modalContentRadio">
+                                        <span><input name="carte" required type="radio" value="visa">Visa<img class="modal-img" src="./static/image/visa.png" alt="visa" /></span>
+                                        <span><input name="carte" required type="radio" value="master">Mastercard<img class="modal-img" src="./static/image/master.png" alt="mastercard" /></span>
+                                        <span><input name="carte" required type="radio" value="cb">Carte Bleue<img class="modal-img" src="./static/image/cb.png" alt="carte bleue" /></span>
+                                    </div>
+
+                                    <div class="modalContentInput">
+                                        <div class="row bank">
+                                            <span>Titulaire de la carte</span>
+                                            <input type="text" name="fname" required size="30px">
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Numéro carte bleue</span>
+                                            <input type="text" name="fname" required>
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Cryptogramme</span>
+                                            <input type="text" name="fname" required size="5px" >
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Date d'expiration</span>
+                                            <input type="text" name="fname" required size="8px" placeholder="MM/AAAA">
+                                        </div>
+                                        <div class="row bank">
+                                            <span>Montant</span>
+                                            <input type="number" step="0.01"  name="fname" required size="8px">
+                                        </div>
+
+                                    </div>
+                                    <div class="modalFooter">
+                                        <a href="#cancel" title="Cancel" class="cancel">Annuler</a>
+                                        <input class="ok" type="submit" name="valider">
+                                        <!--<a href="#ok" title="Ok" class="ok">Valider</a>-->
+                                        <p>Mention d'alerte quelconque</p>
+                                        <div class="clear"></div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <!--------------------------------------------------------------------------->
+                        <!------------------------------MODAL 2-------------------------------------->
+                        <!--------------------------------------------------------------------------->
+                        <div id="modal-operation-output" class="modalWindow">
+                            <div>
+
+                                <div class="modalHeader">
+                                    <img src="./static/image/betclic-logo.png" alt="Betclic" />
+                                    <h2>Retirer de l'argent.</h2>
                                     <a href="#close" title="Close" class="close">X</a>
                                 </div>
 
