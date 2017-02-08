@@ -91,9 +91,9 @@
           <div class="competition">Football, Ligue 2</div>
           <div class="display">Brest - Red Star 93</div>
         </div>
-        <a class="win-host" href="#openBetModal">1,55</a>
-        <div class="tie-game">3,60</div>
-        <div class="win-guest">5,50</div>
+        <a class="win-host betButton" href="#openBetModal" data-bet="Brest">1,55</a>
+        <div class="tie-game betButton" data-bet="Nul">3,60</div>
+        <div class="win-guest betButton" data-bet="Red Star 93">5,50</div>
         <div class="bet-types">+59</div>
         <div class="bet-stats">
           <img src="static/image/stats.png" alt="Statistiques" title="Statistiques" />
@@ -103,50 +103,17 @@
       <div class="betline row">
         <div class="countdown">11 h</div>
         <div class="info">
-          <div class="competition">Football, Ligue 2</div>
-          <div class="display">Brest - Red Star 93</div>
+          <div class="competition">Football, Ligue des champions</div>
+          <div class="display">Paris SG - FC Barcelone</div>
         </div>
-        <div class="win-host">1,55</div>
-        <div class="tie-game">3,60</div>
-        <div class="win-guest">5,50</div>
+        <a class="win-host betButton" data-bet="Paris SG" href="#openBetModal">3.40</a>
+        <a class="tie-game betButton" data-bet="Nul" href="#openBetModal">3,50</a>
+        <a class="win-guest betButton" data-bet="FC Barcelone" href="#openBetModal">2,00</a>
         <div class="bet-types">+59</div>
-        <div class="bet-stats"><img src="static/image/stats.png" alt="Statistiques" title="Statistiques" /></div>
-      </div>
-      <div class="betline row">
-        <div class="countdown">11 h</div>
-        <div class="info">
-          <div class="competition">Football, Ligue 2</div>
-          <div class="display">Brest - Red Star 93</div>
+        <div class="bet-stats">
+          <img src="static/image/stats.png" alt="Statistiques" title="Statistiques" />
+          <img src="static/image/stats.png" alt="Statistiques" title="Statistiques" />
         </div>
-        <div class="win-host">1,55</div>
-        <div class="tie-game">3,60</div>
-        <div class="win-guest">5,50</div>
-        <div class="bet-types">+59</div>
-        <div class="bet-stats"><img src="static/image/stats.png" alt="Statistiques" title="Statistiques" /></div>
-      </div>
-      <div class="betline row">
-        <div class="countdown">11 h</div>
-        <div class="info">
-          <div class="competition">Football, Ligue 2</div>
-          <div class="display">Brest - Red Star 93</div>
-        </div>
-        <div class="win-host">1,55</div>
-        <div class="tie-game">3,60</div>
-        <div class="win-guest">5,50</div>
-        <div class="bet-types">+59</div>
-        <div class="bet-stats"><img src="static/image/stats.png" alt="Statistiques" title="Statistiques" /></div>
-      </div>
-      <div class="betline row">
-        <div class="countdown">11 h</div>
-        <div class="info">
-          <div class="competition">Football, Ligue 2</div>
-          <div class="display">Brest - Red Star 93</div>
-        </div>
-        <div class="win-host">1,55</div>
-        <div class="tie-game">3,60</div>
-        <div class="win-guest">5,50</div>
-        <div class="bet-types">+59</div>
-        <div class="bet-stats"><img src="static/image/stats.png" alt="Statistiques" title="Statistiques" /></div>
       </div>
 
       <!-- On going -->
@@ -283,12 +250,31 @@
     <div class="modalContent">
       <h2>Votre sélection</h2>
       <div class="betModalContainer">
-        <div class="betModalLeft">
+        <div class="betModalLeft box">
           <strong class="betModalTitle"></strong>
-          <p class="betModalBet">Pari sur : <span></span></p>
-          <p class="betModalQuotation">Cote : <span></span></p>
+          <p class="betModalBetOn">
+            <span>Pari sur :</span>
+            <span></span>
+          </p>
+          <p class="betModalQuotation">
+            <span>Cote :</span>
+            <span></span>
+          </p>
+          <div class="betModalBet">
+            <label for="betInput">Mise :</label>
+            <div>
+              <input id="betInput" type="number" min="0">
+              €
+            </div>
+          </div>
         </div>
-        <div class="betModalRight"></div>
+        <div class="betModalRight box">
+          <div>
+            <span>Gain possible :</span>
+            <span class="betModalSum">120€</span>
+          </div>
+          <button class="betModalSubmit">Valider mon pari</button>
+        </div>
       </div>
     </div>
   </div>
