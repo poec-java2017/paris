@@ -11,10 +11,10 @@
 <body>
 <header id="info">
     <div class="container">
-        <div id="date">
+        <time id="date">
             Lun 23 Jan 2017<br/>
             09:21
-        </div>
+        </time>
         <div id="help">
             Famille, vie sociale, santé financière. Etes-vous prêt à tout miser ?<br/>
             Pour être aidé, appeler les 09-74-75-13-13
@@ -72,7 +72,7 @@
     <div class="container">
         <section>
             <h1>Inscription</h1>
-            <form id="register" name="register" action="index.html" method="get" class="row wrap">
+            <form id="registerForm" name="registerForm" action="index.html" method="get" class="row wrap">
                 <div class="registerBoxes">
                     <p class="registrationBigTitle">
                         <b>Vos informations personnelles</b>
@@ -95,10 +95,10 @@
 
 
                     <div class="form-item">
-                        <label for="CustBirthDate">Date de naissance</label>
+                        <label for="CustBirthDate_Day">Date de naissance</label>
                         <select class="day" data-val="true"
                                 data-val-required="Veuillez renseigner votre jour de naissance"
-                                id="CustBirthDate_Day" name="CustBirthDate.Day" onchange="ValideDateOfBirth()"
+                                id="CustBirthDate_Day" onchange="ValideDateOfBirth()"
                                 name = "CustBirthDate_Day">
                             <option selected="selected" value="">Jour</option>
                             <option value="01">01</option>
