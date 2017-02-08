@@ -99,7 +99,7 @@
     height: 20px;
 }
 
-.betModalRight button{
+.betModalRight .betModalSubmit{
     background: #333;
     border: none;
     border-radius: 2px;

@@ -21,6 +21,10 @@ function betChange(){
     $('.betModalSum').text(sum + ' €');
 }
 
+$('.betModalSubmit').click(function(){
+    $.notify("Pari validé", "success");
+    location.href = location.href + '#';
+});
 
 $('.betButton').click(function(){
     // Intitulé du match
