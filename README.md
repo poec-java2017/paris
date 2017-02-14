@@ -4,6 +4,15 @@
 
 ## Installation
 
-```sh
-$ git clone https:///github.com/poec-java2017/paris.git
+```bash
+git clone https:///github.com/poec-java2017/paris.git
+```
+
+## NodeJS and Grunt commands
+
+```bash
+# Install project dependencies
+npm -i
+# Watch css modification to compile and minify
+grunt run dev
 ```
