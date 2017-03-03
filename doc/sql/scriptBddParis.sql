@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `paris`.`address` (
   `street` VARCHAR(45) NULL DEFAULT NULL,
   `postcode` VARCHAR(6) NULL DEFAULT NULL,
   `idCity` INT(11) NOT NULL,
-  PRIMARY KEY (`id`, `idCity`),
+  PRIMARY KEY (`id`,  `idCity`),
   INDEX `fk_address_city1_idx` (`idCity` ASC),
   CONSTRAINT `fk_address_city1`
     FOREIGN KEY (`idCity`)

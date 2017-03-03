@@ -19,6 +19,7 @@ module.exports = function(grunt){
                         'src/public/static/css/modal/bet.css',
                         'src/public/static/css/modal/refill-payback.css'
                     ],
+                    // Files to be refactored
                     'src/build/static/css/refactor.css': [
                         'src/public/static/css/inscription.css'
                     ]
@@ -41,8 +42,7 @@ module.exports = function(grunt){
         watch: {
             css: {
                 files: [
-                    'src/public/static/css/generics.css',
-                    'src/public/static/css/default.css',
+                    'src/public/static/css/*.css',
                     'src/public/static/css/modal/*.css'
                 ],
                 tasks:['concat:css', 'cssmin']

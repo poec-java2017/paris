@@ -1,4 +1,4 @@
-/* Paris - v0.0.1 - 2017-02-14 */
+/* Paris - v0.0.1 - 2017-02-15 */
 /*INSCRIPTION*/
 /*************/
 #register {
@@ -13,7 +13,7 @@
     flex:1 auto;
     height:auto;
     margin-bottom: 15px;
-    padding: 0 0 0 5px;
+    padding:0 0 0 5px;
 }
 .registerBoxes + div.col {
     flex:1 auto;
