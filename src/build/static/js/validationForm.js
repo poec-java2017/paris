@@ -1,23 +1,23 @@
 /**
  * Created by formation2 on 08/02/17.
  */
-$(document).on('submit', '#registrationForm', function(e){
+$(document).on('submit', '#registerForm', function(e){
     e.preventDefault();
-   if (document.registrationForm.Password.value != document.registrationForm.PasswordConfirm.value){
+   if (document.registerForm.Password.value != document.registerForm.PasswordConfirm.value){
        alert( "Veuillez  renseignez deux mots de passe identiques!" );
-       document.registrationForm.Password.focus() ;
+       document.registerForm.Password.focus() ;
        return false;
    }
 
 
-    var nombre = document.registrationForm.PhoneNumber.value;
+    var nombre = document.registerForm.PhoneNumber.value;
     var chiffres = new String(nombre);
     // Enlever tous les charactères sauf les chiffres
     //chiffres = chiffres.replace(/[^0-9]/g, '');
 
     if (isNaN(parseFloat(nombre))) {
         alert("Assurez-vous de rentrer un nombre");
-        document.registrationForm.PhoneNumber.focus();
+        document.registerForm.PhoneNumber.focus();
         return false;
     }
 
@@ -26,12 +26,12 @@ $(document).on('submit', '#registrationForm', function(e){
     if (compteur!=10)
     {
         alert("Assurez-vous de rentrer un numéro à 10 chiffres (xxx-xxx-xxxx)");
-        document.registrationForm.PhoneNumber.focus();
+        document.registerForm.PhoneNumber.focus();
         return false;
     }
 
     //Test pour la majorité
-    var object = document.registrationForm.CustBirthDate_Year;
+    var object = document.registerForm.CustBirthDate_Year;
     var index = object.selectedIndex;
     var value =  object.options[index].value;
     if($('#CustBirthDate_Year').value == 1999){
